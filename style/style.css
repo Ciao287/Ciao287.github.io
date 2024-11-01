@@ -1,1 +1,6 @@
-
+body {
+    background: linear-gradient(180deg, #000000 1%, #3c7900 100%);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: contain;
+}
