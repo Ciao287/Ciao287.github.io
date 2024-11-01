@@ -23,8 +23,7 @@
       </div>
     </div>
     <script>
-      const data = new Date();
-      const oraFormattata = data.toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
+      const oraFormattata = new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
       document.getElementById('ora').textContent = `Oggi alle ${oraFormattata}`;
     </script>
   </body>
