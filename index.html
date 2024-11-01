@@ -15,12 +15,23 @@
       <div style="display: flex; flex-direction: column; align-items: center;">
         <div style="display: flex; align-items: flex-end;">
             <h1 style="margin: 0; color: white;">Ciao287</h1>
-            <p style="margin: 0; color: rgb(0, 0, 0, 0.5); margin-left: 10px;">Oggi alle 10:25</p> <!-- Paragrafo a destra dell'h1 -->
+            <p class="ora" style="margin: 0; color: rgb(0, 0, 0, 0.5); margin-left: 10px;"></p> <!-- Paragrafo a destra dell'h1 -->
         </div>
         <div style="display: flex; flex-wrap: wrap; align-items: top; justify-content: center; background-color: grey; position: relative; border-radius: 15px;">
           <p>ciao</p>
         </div>
       </div>
     </div>
+    <script>
+      const data = new Date();
+            const opzioniOra = {
+                hour: '2-digit',      // Ore a due cifre
+                minute: '2-digit',    // Minuti a due cifre
+                second: '2-digit',    // Secondi a due cifre
+                timeZoneName: 'short' // Nome breve del fuso orario (es. CET, EST)
+            };
+            const oraFormattata = data.toLocaleTimeString(undefined, opzioniOra);
+            document.getElementById('ora').textContent = `Oggi alle ${oraFormattata}`;
+    </script>
   </body>
 </html>
