@@ -62,19 +62,20 @@
 
   // document.addEventListener('DOMContentLoaded', adjustMarginOnBreak);
       function adjustDynamicMargin() {
-    const titleElement = document.querySelector('.title');
+    const titleElement = document.querySelector('.testo');
     const containerWidth = titleElement.parentElement.offsetWidth;
     const contentWidth = titleElement.scrollWidth;
     
-    // Calcola lo spazio disponibile alla destra del testo
+    // Calcola lo spazio disponibile a destra
     const availableSpace = containerWidth - contentWidth;
 
-    // Imposta il margine destro come il minimo tra lo spazio disponibile e 15px
-    // Questo fa sì che il margine si riduca man mano che lo spazio si allarga
-    titleElement.style.marginRight = `${Math.min(availableSpace, 15)}px`;
+    // Imposta il margine destro in base allo spazio disponibile
+    // Mantiene il margine tra 5px e 15px
+    const dynamicMargin = Math.max(5, Math.min(availableSpace / 2, 15));
+    titleElement.style.marginRight = `${dynamicMargin}px`;
   }
 
-  // Aggiorna il margine su resize e all'avvio
+  // Chiama la funzione su resize e all'avvio
   window.addEventListener('resize', adjustDynamicMargin);
   document.addEventListener('DOMContentLoaded', adjustDynamicMargin);
     </script>
