@@ -19,7 +19,7 @@
         </div>
         <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; background-color: rgb(61, 64, 70, 1); position: relative; border-radius: 15px; margin-top: 5px; align-self: flex-start;">
 <!--         <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; background-color: rgb(49, 51, 56, 1); position: relative; border-radius: 15px; margin-top: 5px; align-self: flex-start;"> -->
-          <h1 style="word-break: break-word; color: rgb(255, 255, 255, 0.8); font-weight: 350; margin-left: 15px;">ciao</h1>
+          <h1 class="testo" style="word-break: break-word; color: rgb(255, 255, 255, 0.8); font-weight: 350; margin-left: 15px;">ciao</h1>
         </div>
         <div style="display: flex; align-items: flex-end; margin-top: 5px">
           <button type="button" class="btn btn-primary" onclick="window.location.href='/ciao'">Primary</button>
@@ -30,6 +30,17 @@
     <script>
       const oraFormattata = new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
       document.getElementById('ora').textContent = `Oggi alle ${oraFormattata}`;
+
+      function adjustMargin() {
+        if (document.querySelector('.testo').scrollWidth; > document.querySelector('.testo').offsetWidth;) {
+          document.querySelector('.testo').style.marginRight = '0';
+        } else {
+          document.querySelector('.testo').style.marginRight = '15px';
+        }
+      }
+
+    window.addEventListener('resize', adjustMargin);
+    document.addEventListener('DOMContentLoaded', adjustMargin);
     </script>
   </body>
 </html>
