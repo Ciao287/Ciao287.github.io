@@ -19,7 +19,7 @@
         </div>
         <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; background-color: rgb(61, 64, 70, 1); position: relative; border-radius: 15px; margin-top: 5px; align-self: flex-start;">
 <!--         <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; background-color: rgb(49, 51, 56, 1); position: relative; border-radius: 15px; margin-top: 5px; align-self: flex-start;"> -->
-          <h1 class="testo" style="word-break: break-word; color: rgb(255, 255, 255, 0.8); font-weight: 350; margin-left: 15px; margin-right: 15px;">ciao</h1>
+          <h1 style="word-break: break-word; color: rgb(255, 255, 255, 0.8); font-weight: 350; margin-left: 15px; margin-right: 15px;">ciao</h1>
         </div>
         <div style="display: flex; align-items: flex-end; margin-top: 5px">
           <button type="button" class="btn btn-primary" onclick="window.location.href='/ciao'">Primary</button>
@@ -30,18 +30,6 @@
     <script>
       const oraFormattata = new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
       document.getElementById('ora').textContent = `Oggi alle ${oraFormattata}`;
-
-      function adjustTitleWidth() {
-      const title = document.querySelector('.testo');
-      const container = title.parentElement;
-
-      // Imposta la larghezza dell'h1 per adattarsi al contenuto
-      title.style.width = `${title.scrollWidth}px`;
-    }
-
-    // Chiama la funzione al caricamento e al resize
-    window.addEventListener('load', adjustTitleWidth);
-    window.addEventListener('resize', adjustTitleWidth);
     </script>
   </body>
 </html>
