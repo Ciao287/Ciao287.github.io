@@ -31,24 +31,17 @@
       const oraFormattata = new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
       document.getElementById('ora').textContent = `Oggi alle ${oraFormattata}`;
 
-      function adjustFontSizeToFit() {
-      const title = document.querySelector('.testo');
+      function adjustTitleWidth() {
+      const title = document.querySelector('.title');
       const container = title.parentElement;
-      
-      // Imposta dimensioni iniziali
-      let fontSize = 48;
-      title.style.fontSize = fontSize + 'px';
-      
-      // Riduci la dimensione del font finché non rientra nella larghezza del contenitore
-      while (title.scrollWidth > container.clientWidth && fontSize > 10) {
-        fontSize -= 1; // Riduci di 1px alla volta
-        title.style.fontSize = fontSize + 'px';
-      }
+
+      // Imposta la larghezza dell'h1 per adattarsi al contenuto
+      title.style.width = `${title.scrollWidth}px`;
     }
 
     // Chiama la funzione al caricamento e al resize
-    window.addEventListener('load', adjustFontSizeToFit);
-    window.addEventListener('resize', adjustFontSizeToFit);
+    window.addEventListener('load', adjustTitleWidth);
+    window.addEventListener('resize', adjustTitleWidth);
     </script>
   </body>
 </html>
