@@ -19,7 +19,7 @@
         </div>
         <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; background-color: rgb(61, 64, 70, 1); position: relative; border-radius: 15px; margin-top: 5px; align-self: flex-start;">
 <!--         <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; background-color: rgb(49, 51, 56, 1); position: relative; border-radius: 15px; margin-top: 5px; align-self: flex-start;"> -->
-          <h1 class="testo" style="word-break: break-word; color: rgb(255, 255, 255, 0.8); font-weight: 350; margin-left: 15px;">ciao</h1>
+          <h1 class="testo" style="word-break: break-word; color: rgb(255, 255, 255, 0.8); font-weight: 350; margin-left: 15px; margin-right: 15px;">ciao</h1>
         </div>
         <div style="display: flex; align-items: flex-end; margin-top: 5px">
           <button type="button" class="btn btn-primary" onclick="window.location.href='/ciao'">Primary</button>
@@ -30,54 +30,6 @@
     <script>
       const oraFormattata = new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
       document.getElementById('ora').textContent = `Oggi alle ${oraFormattata}`;
-
-  //     // function adjustMargin() {
-  //     //   if (document.querySelector('.testo').scrollWidth > document.querySelector('.testo').offsetWidth) {
-  //     //     document.querySelector('.testo').style.marginRight = '0';
-  //     //   } else {
-  //     //     document.querySelector('.testo').style.marginRight = '15px';
-  //     //   }
-  //     // }
-  //     // window.addEventListener('resize', adjustMargin);
-  //     // document.addEventListener('DOMContentLoaded', adjustMargin);
-  //     function adjustMarginOnBreak() {
-  //   const titleElement = document.querySelector('.testo');
-
-  //   // Altezza iniziale
-  //   const initialHeight = titleElement.clientHeight;
-
-  //   function checkForWrap() {
-  //     // Controlla se l'altezza è cambiata rispetto all'iniziale
-  //     if (titleElement.clientHeight > initialHeight) {
-  //       titleElement.style.marginRight = '0';
-  //     } else {
-  //       titleElement.style.marginRight = '15px';
-  //     }
-  //   }
-
-  //   // Chiama la funzione su ridimensionamento della finestra
-  //   window.addEventListener('resize', checkForWrap);
-  //   checkForWrap(); // Chiama la funzione al caricamento iniziale
-  // }
-
-  // document.addEventListener('DOMContentLoaded', adjustMarginOnBreak);
-      function adjustDynamicMargin() {
-    const titleElement = document.querySelector('.testo');
-    const containerWidth = titleElement.parentElement.offsetWidth;
-    const contentWidth = titleElement.scrollWidth;
-    
-    // Calcola lo spazio disponibile a destra
-    const availableSpace = containerWidth - contentWidth;
-
-    // Imposta il margine destro in base allo spazio disponibile
-    // Mantiene il margine tra 5px e 15px
-    const dynamicMargin = Math.max(5, Math.min(availableSpace / 2, 15));
-    titleElement.style.marginRight = `${dynamicMargin}px`;
-  }
-
-  // Chiama la funzione su resize e all'avvio
-  window.addEventListener('resize', adjustDynamicMargin);
-  document.addEventListener('DOMContentLoaded', adjustDynamicMargin);
     </script>
   </body>
 </html>
