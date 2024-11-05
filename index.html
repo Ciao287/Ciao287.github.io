@@ -31,15 +31,36 @@
       const oraFormattata = new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
       document.getElementById('ora').textContent = `Oggi alle ${oraFormattata}`;
 
-      function adjustMargin() {
-        if (document.querySelector('.testo').scrollWidth > document.querySelector('.testo').offsetWidth) {
-          document.querySelector('.testo').style.marginRight = '0';
-        } else {
-          document.querySelector('.testo').style.marginRight = '15px';
-        }
+      // function adjustMargin() {
+      //   if (document.querySelector('.testo').scrollWidth > document.querySelector('.testo').offsetWidth) {
+      //     document.querySelector('.testo').style.marginRight = '0';
+      //   } else {
+      //     document.querySelector('.testo').style.marginRight = '15px';
+      //   }
+      // }
+      // window.addEventListener('resize', adjustMargin);
+      // document.addEventListener('DOMContentLoaded', adjustMargin);
+      function adjustMarginOnBreak() {
+    const titleElement = document.querySelector('.title');
+
+    // Altezza iniziale
+    const initialHeight = titleElement.clientHeight;
+
+    function checkForWrap() {
+      // Controlla se l'altezza è cambiata rispetto all'iniziale
+      if (titleElement.clientHeight > initialHeight) {
+        titleElement.style.marginRight = '0';
+      } else {
+        titleElement.style.marginRight = '15px';
       }
-      window.addEventListener('resize', adjustMargin);
-      document.addEventListener('DOMContentLoaded', adjustMargin);
+    }
+
+    // Chiama la funzione su ridimensionamento della finestra
+    window.addEventListener('resize', checkForWrap);
+    checkForWrap(); // Chiama la funzione al caricamento iniziale
+  }
+
+  document.addEventListener('DOMContentLoaded', adjustMarginOnBreak);
     </script>
   </body>
 </html>
