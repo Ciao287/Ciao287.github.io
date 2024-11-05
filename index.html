@@ -30,6 +30,25 @@
     <script>
       const oraFormattata = new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
       document.getElementById('ora').textContent = `Oggi alle ${oraFormattata}`;
+
+      function adjustFontSizeToFit() {
+      const title = document.querySelector('.testo');
+      const container = title.parentElement;
+      
+      // Imposta dimensioni iniziali
+      let fontSize = 48;
+      title.style.fontSize = fontSize + 'px';
+      
+      // Riduci la dimensione del font finché non rientra nella larghezza del contenitore
+      while (title.scrollWidth > container.clientWidth && fontSize > 10) {
+        fontSize -= 1; // Riduci di 1px alla volta
+        title.style.fontSize = fontSize + 'px';
+      }
+    }
+
+    // Chiama la funzione al caricamento e al resize
+    window.addEventListener('load', adjustFontSizeToFit);
+    window.addEventListener('resize', adjustFontSizeToFit);
     </script>
   </body>
 </html>
