@@ -32,15 +32,21 @@
       document.getElementById('ora').textContent = `Oggi alle ${oraFormattata}`;
 
       function adjustMargin() {
-        if (document.querySelector('.testo').scrollWidth; > document.querySelector('.testo').offsetWidth;) {
-          document.querySelector('.testo').style.marginRight = '0';
-        } else {
-          document.querySelector('.testo').style.marginRight = '15px';
-        }
-      }
+    const titleElement = document.querySelector('.testo');
+    const containerWidth = titleElement.offsetWidth;
+    const contentWidth = titleElement.scrollWidth;
 
-    window.addEventListener('resize', adjustMargin);
-    document.addEventListener('DOMContentLoaded', adjustMargin);
+    // Se il contenuto eccede la larghezza del contenitore, rimuovi il margine destro
+    if (contentWidth > containerWidth) {
+      titleElement.style.marginRight = '0';
+    } else {
+      titleElement.style.marginRight = '15px';
+    }
+  }
+
+  // Inizializza e ricalcola alla modifica della finestra
+  window.addEventListener('resize', adjustMargin);
+  document.addEventListener('DOMContentLoaded', adjustMargin);
     </script>
   </body>
 </html>
