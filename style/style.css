@@ -1,9 +1,9 @@
-body {
+/* body {
     background: linear-gradient(180deg, #000000 1%, #3c7900 100%);
     background-repeat: repeat-x;
     background-attachment: fixed;
     background-size: contain;
-}
+} */
 
 body {
     margin: 0;
@@ -19,7 +19,7 @@ body {
     top: -50px;
     font-size: 1.5rem;
     color: white;
-    animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite, sway 3s ease-in-out infinite;
     pointer-events: none;
     z-index: 2;
 }
@@ -48,4 +48,9 @@ body {
 @keyframes snow {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+@keyframes sway {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(15px); }
 }
