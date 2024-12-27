@@ -8,16 +8,16 @@ body {
 @keyframes snow {
     0% { transform: translateY(0); }
     100% { transform: translateY(100vh); }
-  }
+}
   
-  .snowflake {
+.snowflake {
     position: absolute;
     top: -10px;
     animation: snow 10s linear infinite;
     font-size: 1.5rem;
     color: #fff;
-  }
+}
   
-  .snowflake:nth-child(odd) {
+.snowflake:nth-child(odd) {
     animation-duration: 8s;
-  }
+}
