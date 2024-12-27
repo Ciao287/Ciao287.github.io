@@ -5,19 +5,31 @@ body {
     background-size: contain;
 }
 
-@keyframes snow {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(100vh); }
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #001f3f, #0074d9);
+    color: white;
+    height: 100vh;
 }
-  
+
 .snowflake {
     position: absolute;
-    top: -10px;
-    animation: snow 10s linear infinite;
+    top: -50px;
     font-size: 1.5rem;
-    color: #fff;
+    color: white;
+    animation: snow 10s linear infinite;
+    pointer-events: none;
 }
-  
-.snowflake:nth-child(odd) {
-    animation-duration: 8s;
+
+.snowflake:nth-child(1) { left: 10%; animation-duration: 6s; animation-delay: 0s; }
+.snowflake:nth-child(2) { left: 30%; animation-duration: 7s; animation-delay: 1s; }
+.snowflake:nth-child(3) { left: 50%; animation-duration: 5s; animation-delay: 2s; }
+.snowflake:nth-child(4) { left: 70%; animation-duration: 6s; animation-delay: 1.5s; }
+.snowflake:nth-child(5) { left: 90%; animation-duration: 8s; animation-delay: 0.5s; }
+
+@keyframes snow {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
