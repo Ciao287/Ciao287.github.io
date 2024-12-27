@@ -47,20 +47,23 @@ body {
 
 @keyframes snow {
     0% {
-        transform: translate(0, 0) rotate(0deg); 
+        transform: translate(0, 0) rotate(0deg);
         opacity: 1;
     }
-    25% {
-        transform: translate(10px, 25vh) rotate(45deg);
+    20% {
+        transform: translate(8px, 20vh) rotate(45deg);
     }
-    50% {
-        transform: translate(-10px, 50vh) rotate(90deg);
+    40% {
+        transform: translate(-8px, 40vh) rotate(90deg);
     }
-    75% {
-        transform: translate(15px, 75vh) rotate(135deg);
+    60% {
+        transform: translate(6px, 60vh) rotate(135deg);
+    }
+    80% {
+        transform: translate(-6px, 80vh) rotate(180deg);
     }
     100% {
-        transform: translate(-15px, 100vh) rotate(360deg); 
+        transform: translate(0, 100vh) rotate(360deg);
         opacity: 0;
     }
 }
