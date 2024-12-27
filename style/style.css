@@ -28,6 +28,11 @@ body {
 .snowflake:nth-child(3) { left: 50%; animation-duration: 5s; animation-delay: 2s; }
 .snowflake:nth-child(4) { left: 70%; animation-duration: 6s; animation-delay: 1.5s; }
 .snowflake:nth-child(5) { left: 90%; animation-duration: 8s; animation-delay: 0.5s; }
+.snowflake:nth-child(6) { left: 10%; animation-duration: 6s; animation-delay: 2s; }
+.snowflake:nth-child(7) { left: 30%; animation-duration: 7s; animation-delay: 3s; }
+.snowflake:nth-child(8) { left: 50%; animation-duration: 5s; animation-delay: 4s; }
+.snowflake:nth-child(9) { left: 70%; animation-duration: 6s; animation-delay: 3.5s; }
+.snowflake:nth-child(10) { left: 90%; animation-duration: 8s; animation-delay: 2.5s; }
 
 @keyframes snow {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
