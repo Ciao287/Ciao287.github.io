@@ -50,17 +50,15 @@ body {
         transform: translate(0, 0) rotate(0deg);
         opacity: 1;
     }
-    20% {
-        transform: translate(8px, 20vh) rotate(45deg);
+    25% {
+        transform: translate(10px, 25vh) rotate(45deg);
     }
-    40% {
-        transform: translate(-8px, 40vh) rotate(90deg);
+    50% {
+        transform: translate(-10px, 50vh) rotate(90deg);
+        animation-timing-function: ease-in-out;
     }
-    60% {
-        transform: translate(6px, 60vh) rotate(135deg);
-    }
-    80% {
-        transform: translate(-6px, 80vh) rotate(180deg);
+    75% {
+        transform: translate(10px, 75vh) rotate(135deg);
     }
     100% {
         transform: translate(0, 100vh) rotate(360deg);
