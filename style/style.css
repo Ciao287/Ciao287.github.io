@@ -14,6 +14,49 @@ body {
   height: 100vh;
 }
 
+.container {
+  margin: calc(5vw + 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:50vh;
+}
+
+.img {
+  width: 10vw;
+  max-width: 100px;
+  min-width: 75px;
+  padding: 0;
+  align-self: flex-start;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: fex-start;
+  margin-left: 10px;
+  background-color: rgb(25, 25, 25, 0.5);
+  padding: 20px;
+  box-shadow: 0 0 60px 100px rgb(25, 25, 25, 0.5);
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+}
+
+.name {
+  margin: 0;
+  color: white;
+}
+
+#ora {
+  margin: 0;
+  color: rgb(140, 140, 140, 1);
+  margin-left: 10px;
+}
+
 .snowflake {
   position: absolute;
   top: -50px;
