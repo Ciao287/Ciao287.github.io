@@ -79,3 +79,15 @@
   color: rgb(140, 140, 140, 1);
   margin-left: 10px;
 }
+
+.textcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgb(61, 64, 70, 1);
+  position: relative;
+  border-radius: 15px;
+  margin-top: 5px;
+  align-self: flex-start;
+}
