@@ -91,3 +91,11 @@
   margin-top: 5px;
   align-self: flex-start;
 }
+
+.text {
+  word-break: break-word;
+  color: rgb(255, 255, 255, 0.8);
+  font-weight: 350;
+  margin-left: 15px;
+  margin-right: 15px;
+}
