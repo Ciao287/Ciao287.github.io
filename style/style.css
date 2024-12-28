@@ -48,3 +48,11 @@
     opacity: 0;
   }
 }
+
+img {
+  width: 10vw;
+  max-width: 100px;
+  min-width: 75px;
+  padding: 0;
+  align-self: flex-start;
+}
