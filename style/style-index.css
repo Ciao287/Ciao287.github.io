@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url('/backgrounds/background-index.jpg');
+  background-image: url('../backgrounds/background-index.jpg');
   color: white;
   height: 100vh;
 }
