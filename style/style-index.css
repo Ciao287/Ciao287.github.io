@@ -7,9 +7,9 @@ body {
   height: 100vh;
 }
 
-.shadow {
+.mshadow {
     background-color: rgb(25, 25, 25, 0.5);
     padding: 20px;
-    box-shadow: 0 0 60px 100px rgb(25, 25, 25, 0.5) !important;
+    box-shadow: 0 0 60px 100px rgb(25, 25, 25, 0.5);
     border-radius: 8px;
   }
