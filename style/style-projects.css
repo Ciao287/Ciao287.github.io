@@ -1,8 +1,14 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
   overflow: hidden;
+}
+
+body {
   background-image: url('https://ciao287.is-a.dev/backgrounds/background-projects.jpg');
   color: white;
-  height: 100vh;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
