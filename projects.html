@@ -5,12 +5,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="/style/style-projects.css">
     <link rel="stylesheet" type="text/css" href="/style/style.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
   <body>
-
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div style="margin: calc(5vw + 10px); display: flex; align-items: center; justify-content: center; margin-top:50vh;">
+      <img src="/favicon.ico" class="rounded-circle img" alt="Image">
+      <div class="message mshadow">
+        <div class="user">
+          <h1 class="name">Ciao287</h1>
+          <h2 id="hour"></h2>
+        </div>
+        <div class="textcontainer">
+          <h1 class="text"></h1>
+        </div>
+        <div class="buttonscontainer">
+          <button type="button" class="btn btn-danger" onclick="window.location.href='/projects'">Projects</button>
+          <button type="button" class="btn btn-success" style="margin-left: 10px;" onclick="window.location.href='/links'">Useful Links</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const formattedTime = new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
+      document.getElementById('hour').textContent = `Today at ${formattedTime}`;
+    </script>
   </body>
 </html>
