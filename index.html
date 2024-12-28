@@ -33,9 +33,9 @@
     <div style="margin: calc(5vw + 10px); display: flex; align-items: center; justify-content: center; margin-top:50vh;">
       <img src="/favicon.ico" class="rounded-circle img" alt="Image">
       <div class="message mshadow">
-        <div style="display: flex; align-items: flex-end;">
-          <h1 style="margin: 0; color: white;">Ciao287</h1>
-          <h2 id="ora" style="margin: 0; color: rgb(140, 140, 140, 1); margin-left: 10px;"></h2>
+        <div class="user">
+          <h1 class="name">Ciao287</h1>
+          <h2 id="hour"></h2>
         </div>
         <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; background-color: rgb(61, 64, 70, 1); position: relative; border-radius: 15px; margin-top: 5px; align-self: flex-start;">
 <!--         <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; background-color: rgb(49, 51, 56, 1); position: relative; border-radius: 15px; margin-top: 5px; align-self: flex-start;"> -->
@@ -48,8 +48,8 @@
       </div>
     </div>
     <script>
-      const oraFormattata = new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
-      document.getElementById('ora').textContent = `Today at ${oraFormattata}`;
+      const formattedTime = new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'});
+      document.getElementById('hour').textContent = `Today at ${formattedTime}`;
     </script>
   </body>
 </html>
