@@ -49,10 +49,17 @@
   }
 }
 
-img {
+.img {
   width: 10vw;
   max-width: 100px;
   min-width: 75px;
   padding: 0;
   align-self: flex-start;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: fex-start;
+  margin-left: 10px; 
 }
