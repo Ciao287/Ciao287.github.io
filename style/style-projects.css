@@ -23,7 +23,3 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-
-.textcontainer {
-  background-color: rgb(61, 64, 70, 0.9) !important;
-}
