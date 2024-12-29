@@ -63,6 +63,7 @@ body {
   min-width: 75px;
   padding: 0;
   align-self: flex-start;
+  z-index: 1;
 }
 
 .message {

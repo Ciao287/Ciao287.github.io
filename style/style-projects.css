@@ -12,3 +12,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.mshadow {
+  background-color: rgb(25, 25, 25, 0.4);
+  padding: 20px;
+  box-shadow: 0 0 60px 100px rgb(25, 25, 25, 0.4);
+  border-radius: 8px;
+}
