@@ -1,3 +1,4 @@
 background-index.jpg: https://sfondo.info/sfondi-invernali --> https://sfondo.info/i/original/4/c/d/27991.jpg
 background-links.jpg: https://pixabay.com/photos/winter-landscape-sunset-twilight-2995987/
 background-projects.jpg: https://pixabay.com/photos/northern-lights-aurora-night-7677986/
+background-404.jpg: https://pixabay.com/photos/snow-mountain-landscape-winter-8532116/
