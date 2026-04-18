@@ -58,7 +58,8 @@ body {
 
 .text {
   word-break: break-word;
-  color: rgb(255, 255, 255, 0.8);
+  /* color: rgb(255, 255, 255, 0.8); */
+  color: white;
   font-weight: 350;
   margin-left: 15px;
   margin-right: 15px;
