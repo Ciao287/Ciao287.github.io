@@ -4,7 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #303446;
+  background-color: #292c3c;
 }
 
 .snowflake {
@@ -49,7 +49,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   /* background-color: rgb(61, 64, 70, 0.8); */
-  background-color: #51576d;
+  background-color: #414559;
   position: relative;
   border-radius: 15px;
   margin-top: 5px;
