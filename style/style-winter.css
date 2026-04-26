@@ -6,7 +6,7 @@
   color: white;
   animation: snow 10s linear infinite;
   pointer-events: none;
-  z-index: 2;
+  z-index: 3;
 }
 
 .snowflake:nth-child(1) { left: 15%; animation-duration: 6s; animation-delay: 0s; }
