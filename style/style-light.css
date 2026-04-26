@@ -2,18 +2,22 @@ body {
   background-color: #eff1f5 !important;
 }
 
-a {
-  color: #1e66f5 !important;
+.textcontainer {
+    background-color: #bcc0cc !important;
 }
 
-.text {
+.name {
   color: #4c4f69 !important;
 }
 
-/* #hour {
-  color: !important;
-} */
+#hour {
+    color: #6c6f85 !important
+}
 
-/* .textcontainer {
-    background-color: !important;
-} */
+.text {
+    color: #5c5f77 !important;
+}
+
+a {
+  color: #1e66f5 !important;
+}
